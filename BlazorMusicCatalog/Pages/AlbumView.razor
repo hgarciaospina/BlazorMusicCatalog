@@ -1,17 +1,30 @@
 ﻿@page "/albumView/{id:int}"
 @inject IAlbumService AlbumService
 
-@if (album != null)
+@if (album != null && album.Songs != null)
 {
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div>
+                <div class="album-cover">
                     <img src="data:image/png;base64,@(Convert.ToBase64String(album.CoverImage))" class="img-fluid large-img" />
                     <h1 class="text-muted title">@album.Title</h1>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container song-list">
+        @foreach (var song in album.Songs)
+        {
+            <div class="row song-item">
+                <div class="col-md-4 song-name">
+                    <span>@song.Name</span>
+                </div>
+                <div class="col-md-4 song-player">
+                    <audio controls="controls" id="song.Id" src="/songs/@(song.Path)"></audio>
+                </div>
+            </div>
+        }
     </div>
 }
 else
