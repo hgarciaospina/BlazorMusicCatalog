@@ -1,0 +1,11 @@
+D:\BlazorMusicCatalog\MusicCatalog.Models\bin\Debug\net6.0\BlazorMusicCatalog.Models.deps.json
+D:\BlazorMusicCatalog\MusicCatalog.Models\bin\Debug\net6.0\BlazorMusicCatalog.Models.dll
+D:\BlazorMusicCatalog\MusicCatalog.Models\bin\Debug\net6.0\BlazorMusicCatalog.Models.pdb
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.AssemblyInfoInputs.cache
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.AssemblyInfo.cs
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.csproj.CoreCompileInputs.cache
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.dll
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\refint\BlazorMusicCatalog.Models.dll
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.pdb
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\ref\BlazorMusicCatalog.Models.dll

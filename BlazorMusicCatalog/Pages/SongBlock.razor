@@ -1,0 +1,45 @@
+﻿@using System.IO
+
+<div class="song-block">
+    <div class="form-group">
+        <label for="songName">Name</label>
+        <InputText id="songName" class="form-control" @bind-Value="@Song.Name" />
+    </div>
+    <div class="form-group">
+        <label for="songUpload">Upload</label>
+        <InputFile id="songUpload"  OnChange="LoadSong" class="form-control" @bind-Value="@Song.Path" />
+    </div>
+  @*   <button type="button" class="btn btn-orange" @onclick="() => OnSonChanged.InvokeAsync(Song)">Update</button> *@
+</div>
+
+@code {
+    [Parameter]
+    public Song Song { get; set; }
+
+    [Parameter]
+    public EventCallback<Song> OnSonChanged { get; set; }
+
+    // async Task UpdateValueSong()
+    // {
+    //     await OnSonChanged.InvokeAsync(Song);
+    // }
+
+    async Task LoadSong(InputFileChangeEventArgs e)
+    {
+        var folderName = Path.Combine("wwwroot", "songs");
+        var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+        var fullPath = Path.Combine(pathToSave, e.File.Name.Replace(" ", "-"));
+
+        Song.Extension = e.File.Name.Substring(e.File.Name.Count() - 3, 3);
+        Song.Path = e.File.Name.Replace(" ", "-");
+
+        using (var ms = new MemoryStream())
+        {
+            await e.File.OpenReadStream(Int32.MaxValue).CopyToAsync(ms);
+            await File.WriteAllBytesAsync(fullPath, ms.ToArray());
+        }
+
+        await OnSonChanged.InvokeAsync(Song);
+    }
+
+}

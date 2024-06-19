@@ -1,0 +1,88 @@
+﻿@page "/albumAdd"
+@inject NavigationManager NavigationManager
+
+@if (album == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <EditForm Model="@album" class="album-form">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <InputText id="title" class="form-control" @bind-Value="@album.Title" />
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <InputText id="description" class="form-control" @bind-Value="@album.Description" />
+        </div>
+        <div class="form-group">
+            <label for="releaseDate">Release Date</label>
+            <InputDate id="releaseDate" class="form-control" @bind-Value="@album.ReleaseDate" />
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <InputText id="author" class="form-control" @bind-Value="@album.Author" />
+        </div>
+
+        <h3>Songs <button type="button" class="btn btn-primary" @onclick="AddSong">+</button></h3>
+
+        @foreach (var song in album.Songs)
+        {
+            <SongBlock Song="song" OnSonChanged="UpdateAddedSong" />
+        }
+
+        <div class="form-actions">
+            <button type="submit" class="btn btn-success" @onclick="AlbumSave">Save</button>
+            <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+        </div>
+    </EditForm>
+}
+
+@code {
+    public Album album = new Album() { Songs = new List<Song>() };
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            album.Songs.Add(new Song() { Number = album.Songs.Count + 1 });
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+
+    public void AddSong()
+    {
+        album.Songs.Add(new Song() { Number = album.Songs.Count + 1 });
+    }
+
+    public async void UpdateAddedSong(Song song)
+    {
+        var songToUpdate = album.Songs.FirstOrDefault(s => s.Number == song.Number);
+
+        if (songToUpdate != null)
+        {
+            songToUpdate.Extension = song.Extension;
+            songToUpdate.Name = song.Name;
+            songToUpdate.Path = song.Path;
+        }
+    }
+
+    protected async Task AlbumSave()
+    {
+        var a = album.Songs;
+    }
+
+    public void Cancel()
+    {
+        NavigateToHome();
+    }
+
+    public void NavigateToHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}
