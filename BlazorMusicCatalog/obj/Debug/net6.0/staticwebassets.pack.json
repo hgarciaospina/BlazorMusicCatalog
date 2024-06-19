@@ -57,12 +57,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\2024-06-07_21-08-01.mp4",
-      "PackagePath": "staticwebassets\\songs\\2024-06-07_21-08-01.mp4"
+      "Id": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\Libre.mp3",
+      "PackagePath": "staticwebassets\\songs\\Libre.mp3"
     },
     {
-      "Id": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\PowerUp-3-bootcamp-2023-05-02-17-05-47.mkv",
-      "PackagePath": "staticwebassets\\songs\\PowerUp-3-bootcamp-2023-05-02-17-05-47.mkv"
+      "Id": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\Un-Beso-Y-Una-Flor.mp3",
+      "PackagePath": "staticwebassets\\songs\\Un-Beso-Y-Una-Flor.mp3"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorMusicCatalog.Microsoft.AspNetCore.StaticWebAssets.props",

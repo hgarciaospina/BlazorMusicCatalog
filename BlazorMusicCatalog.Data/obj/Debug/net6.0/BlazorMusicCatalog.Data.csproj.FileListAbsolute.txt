@@ -15,3 +15,4 @@ D:\BlazorMusicCatalog\BlazorMusicCatalog.Data\obj\Debug\net6.0\refint\BlazorMusi
 D:\BlazorMusicCatalog\BlazorMusicCatalog.Data\obj\Debug\net6.0\BlazorMusicCatalog.Data.pdb
 D:\BlazorMusicCatalog\BlazorMusicCatalog.Data\obj\Debug\net6.0\BlazorMusicCatalog.Data.genruntimeconfig.cache
 D:\BlazorMusicCatalog\BlazorMusicCatalog.Data\obj\Debug\net6.0\ref\BlazorMusicCatalog.Data.dll
+D:\BlazorMusicCatalog\BlazorMusicCatalog.Data\obj\Debug\net6.0\BlazorMusicCatalog.Data.sourcelink.json

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EFXel8hrVIy2rS+WdQfHWGZHL6LhbKU6ktKZVfJorig=",
+  "Hash": "2FqEAhp0I1lQgZH+5ilhU5+e9LumOtGf3LmEx2Bz8fk=",
   "Source": "BlazorMusicCatalog",
   "BasePath": "_content/BlazorMusicCatalog",
   "Mode": "Default",
@@ -302,12 +302,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\2024-06-07_21-08-01.mp4",
+      "Identity": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\Libre.mp3",
       "SourceId": "BlazorMusicCatalog",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\",
       "BasePath": "_content/BlazorMusicCatalog",
-      "RelativePath": "songs/2024-06-07_21-08-01.mp4",
+      "RelativePath": "songs/Libre.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,15 +318,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\songs\\2024-06-07_21-08-01.mp4"
+      "OriginalItemSpec": "wwwroot\\songs\\Libre.mp3"
     },
     {
-      "Identity": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\PowerUp-3-bootcamp-2023-05-02-17-05-47.mkv",
+      "Identity": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\songs\\Un-Beso-Y-Una-Flor.mp3",
       "SourceId": "BlazorMusicCatalog",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\BlazorMusicCatalog\\BlazorMusicCatalog\\wwwroot\\",
       "BasePath": "_content/BlazorMusicCatalog",
-      "RelativePath": "songs/PowerUp-3-bootcamp-2023-05-02-17-05-47.mkv",
+      "RelativePath": "songs/Un-Beso-Y-Una-Flor.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\songs\\PowerUp-3-bootcamp-2023-05-02-17-05-47.mkv"
+      "OriginalItemSpec": "wwwroot\\songs\\Un-Beso-Y-Una-Flor.mp3"
     }
   ]
 }

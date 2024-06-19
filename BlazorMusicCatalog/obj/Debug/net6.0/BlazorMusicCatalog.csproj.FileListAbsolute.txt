@@ -69,3 +69,4 @@ D:\BlazorMusicCatalog\BlazorMusicCatalog\bin\Debug\net6.0\BlazorMusicCatalog.Dat
 D:\BlazorMusicCatalog\BlazorMusicCatalog\bin\Debug\net6.0\BlazorMusicCatalog.Models.pdb
 D:\BlazorMusicCatalog\BlazorMusicCatalog\obj\Debug\net6.0\BlazorMusicCatalog.csproj.AssemblyReference.cache
 D:\BlazorMusicCatalog\BlazorMusicCatalog\obj\Debug\net6.0\BlazorMu.FEABA1F6.Up2Date
+D:\BlazorMusicCatalog\BlazorMusicCatalog\obj\Debug\net6.0\BlazorMusicCatalog.sourcelink.json

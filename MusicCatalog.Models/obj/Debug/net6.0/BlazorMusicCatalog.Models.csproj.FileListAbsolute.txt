@@ -9,3 +9,4 @@ D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Mo
 D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\refint\BlazorMusicCatalog.Models.dll
 D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.pdb
 D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\ref\BlazorMusicCatalog.Models.dll
+D:\BlazorMusicCatalog\MusicCatalog.Models\obj\Debug\net6.0\BlazorMusicCatalog.Models.sourcelink.json
