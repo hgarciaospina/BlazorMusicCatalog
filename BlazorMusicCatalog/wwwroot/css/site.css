@@ -193,11 +193,67 @@ a, .btn-link {
     text-align: left;
 }
 
-@media (max-width: 768px) {
-    .album-cover {
-        text-align: center;    
+
+/* */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-    .song-name, .song-player {
-        text-align: center;
+.album-card {
+    margin-bottom: 20px;
 }
+
+    .album-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Adds rounded corners to images */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    }
+
+.album-info {
+    margin-top: 10px;
+    text-align: center; /* Centers text below images */
+}
+
+    .album-info h6, .album-info span {
+        display: block;
+        margin: 0;
+    }
+
+        .album-info h6 a {
+            text-decoration: none;
+            color: #007bff; /* Bootstrap primary color */
+            font-weight: bold; /* Makes the text bold */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+            .album-info h6 a:hover {
+                text-decoration: underline;
+                color: #0056b3; /* Darker shade of primary color */
+            }
+
+    .album-info span {
+        color: #6c757d; /* Bootstrap muted text color */
+    }
+
+a {
+    text-decoration: none; /* Removes underline from all links */
+    color: inherit; /* Inherits the color of the parent element */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+    a:hover {
+        color: #0056b3; /* Darker shade of primary color */
+        text-decoration: underline; /* Adds underline on hover */
+    }
+
+
+@media (max-width: 768px) {
+    .album-cover {
+        text-align: center;
+    }
+
+    /* */
+    

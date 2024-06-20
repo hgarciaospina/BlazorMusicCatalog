@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/lldNiRk3uA=",
+  "dgSpecHash": "KEEHRUuH+B8=",
   "success": true,
   "projectFilePath": "D:\\BlazorMusicCatalog\\MusicCatalog.Models\\BlazorMusicCatalog.Models.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -15,9 +15,11 @@ namespace BlazorMusicCatalog.Data.Services
         {
             _context = context;
         }
-        public Task<bool> DeleteAlbum(int id)
+        public async Task<bool> DeleteAlbum(int id)
         {
-            throw new NotImplementedException();
+            _context.Remove(id);
+
+            return await _context.SaveChangesAsync() > 0;
         }
 
         public async Task<Album> GetAlbumDetails(int id)
@@ -30,7 +32,7 @@ namespace BlazorMusicCatalog.Data.Services
 
         public async Task<IEnumerable<Album>> GetAlbums()
         {
-           throw new NotImplementedException();
+            return await _context.Albums.ToListAsync();
         }
 
         public async Task<bool> InsertAlbum(Album album)

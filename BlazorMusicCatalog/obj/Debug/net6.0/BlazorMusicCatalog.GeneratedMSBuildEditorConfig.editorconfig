@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1BZGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/BlazorMusicCatalog/BlazorMusicCatalog/Pages/Albums.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/BlazorMusicCatalog/BlazorMusicCatalog/Pages/AlbumView.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1WaWV3LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
