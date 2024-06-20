@@ -7,9 +7,11 @@
     </div>
     <div class="form-group">
         <label for="songUpload">Upload Song</label>
-        <InputFile id="songUpload"  OnChange="LoadSong" class="form-control" @bind-Value="@Song.Path" />
+        <InputFile id="songUpload" OnChange="LoadSong" class="form-control" @bind-Value="@Song.Path" />
     </div>
-  @*   <button type="button" class="btn btn-orange" @onclick="() => OnSonChanged.InvokeAsync(Song)">Update</button> *@
+    <div class="from-group">
+        <h3>Songs <button type="button" class="btn btn-danger" @onclick="RemoveSong">-</button></h3>
+    </div>
 </div>
 
 @code {
@@ -19,10 +21,8 @@
     [Parameter]
     public EventCallback<Song> OnSonChanged { get; set; }
 
-    // async Task UpdateValueSong()
-    // {
-    //     await OnSonChanged.InvokeAsync(Song);
-    // }
+    [Parameter]
+    public EventCallback<Song> OnSongRemoved { get; set; }
 
     async Task LoadSong(InputFileChangeEventArgs e)
     {
@@ -42,4 +42,8 @@
         await OnSonChanged.InvokeAsync(Song);
     }
 
+    async Task RemoveSong()
+    {
+        await OnSongRemoved.InvokeAsync(Song);
+    }
 }

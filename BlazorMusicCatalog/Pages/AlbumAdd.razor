@@ -35,12 +35,17 @@ else
 
         @foreach (var song in album.Songs)
         {
-            <SongBlock Song="song" OnSonChanged="UpdateAddedSong" />
+            <SongBlock Song="song" OnSonChanged="UpdateAddedSong" 
+                OnSongRemoved="RemoveSong"></SongBlock>
         }
 
         <div class="form-actions">
             <button type="submit" class="btn btn-success" @onclick="AlbumSave">Save</button>
             <button type="button" class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+            @if (id > 0)
+            {
+                <button type="button" class="btn btn-danger" @onclick="DeleteAlbum">Delete</button>
+            }
         </div>
     </EditForm>
 }
@@ -75,12 +80,22 @@ else
         }
     }
 
-    public void AddSong()
+    protected void AddSong()
     {
         album.Songs.Add(new Song() { Number = album.Songs.Count + 1 });
     }
 
-    public async void UpdateAddedSong(Song song)
+    protected async Task DeleteAlbum()
+    {
+        if(album != null)
+        {
+            await AlbumService.DeleteAlbum(album);
+            NavigateToHome();
+        }
+        
+    }
+
+    protected async void UpdateAddedSong(Song song)
     {
         var songToUpdate = album.Songs.FirstOrDefault(s => s.Number == song.Number);
 
@@ -90,6 +105,14 @@ else
             songToUpdate.Name = song.Name;
             songToUpdate.Path = song.Path;
         }
+    }
+
+    protected void RemoveSong(Song song)
+    {
+        var songToRemove = album.Songs.FirstOrDefault(s => s.Number == song.Number);
+        
+        if(songToRemove != null)
+            album.Songs.Remove(songToRemove);
     }
 
     async Task LoadAlbumCover(InputFileChangeEventArgs e)
@@ -112,12 +135,12 @@ else
         NavigateToHome();
     }
 
-    public void Cancel()
+    protected void Cancel()
     {
         NavigateToHome();
     }
 
-    public void NavigateToHome()
+    protected void NavigateToHome()
     {
         NavigationManager.NavigateTo("/");
     }

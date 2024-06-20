@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorMusicCatalog.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b89a7e4ac50ec81e8d2a9c54a1f6b2b341eecb1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+110e3865746f2a7473f168eec801c95f9ae31599")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorMusicCatalog.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorMusicCatalog.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

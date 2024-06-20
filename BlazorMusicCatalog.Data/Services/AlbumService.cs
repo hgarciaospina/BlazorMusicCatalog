@@ -15,9 +15,9 @@ namespace BlazorMusicCatalog.Data.Services
         {
             _context = context;
         }
-        public async Task<bool> DeleteAlbum(int id)
+        public async Task<bool> DeleteAlbum(Album album)
         {
-            _context.Remove(id);
+            _context.Albums.Remove(album);
 
             return await _context.SaveChangesAsync() > 0;
         }
