@@ -1,4 +1,5 @@
 ﻿@page "/albumAdd"
+@page "/albumAdd/{id:int}"
 @inject NavigationManager NavigationManager
 @inject IAlbumService AlbumService
 
@@ -45,13 +46,28 @@ else
 }
 
 @code {
-    public Album album = new Album() {ReleaseDate = DateTime.Now, Songs = new List<Song>() };
+    [Parameter]
+    public int id { get; set; }
+    public Album ?album;
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            album.Songs.Add(new Song() { Number = album.Songs.Count + 1 });
+            if (id > 0)
+            {
+                album = await AlbumService.GetAlbumDetails(id);
+            } 
+            else
+            {
+                album = new Album() 
+                { 
+                    ReleaseDate = DateTime.Now, 
+                    Songs = new List<Song>() 
+                };
+                album.Songs.Add(new Song() { Number = album.Songs.Count + 1 });
+            }
+
         }
         catch (Exception)
         {
@@ -88,7 +104,12 @@ else
 
     protected async Task AlbumSave()
     {
-        await AlbumService.InsertAlbum(album);
+        if(id > 0 && album !=null)
+            await AlbumService.UpdateAlbum(album);
+        else if (id == 0 && album != null)
+            await AlbumService.InsertAlbum(album);
+
+        NavigateToHome();
     }
 
     public void Cancel()
